@@ -19,6 +19,6 @@ public class MovieGateway implements UseCase.InputUseCase {
     }
 
     public Movie getMovie(){
-        return new Movie(id, name, description, MovieStatus.valueOf(status));
+        return new Movie();
     }
 }
