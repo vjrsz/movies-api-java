@@ -22,4 +22,5 @@ public class Movie implements Serializable {
     private String name;
     private String description;
     private MovieStatus status;
+
 }

@@ -2,7 +2,7 @@ package com.vjrszcode.movies.config.seeders;
 
 import com.vjrszcode.movies.core.entities.Movie;
 import com.vjrszcode.movies.core.entities.enums.MovieStatus;
-import com.vjrszcode.movies.infra.repositories.MovieRepository;
+import com.vjrszcode.movies.adapters.repositories.MovieRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
