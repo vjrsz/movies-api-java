@@ -5,5 +5,4 @@ import org.springframework.http.ResponseEntity;
 
 public interface MovieResource {
     public ResponseEntity<MoviesPresenter> getAll();
-
 }

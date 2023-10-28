@@ -1,9 +1,18 @@
 package com.vjrszcode.movies.core.useCases.movies;
 
-import com.vjrszcode.movies.adapters.gateways.MovieGateway;
-import com.vjrszcode.movies.adapters.presenters.MoviesPresenter;
+import com.vjrszcode.movies.core.entities.Movie;
 import com.vjrszcode.movies.core.useCases.UseCase;
+import lombok.Value;
 
-public interface GetAllMovieUseCase extends UseCase<MovieGateway, MoviesPresenter>{
+import java.util.List;
+
+public interface GetAllMovieUseCase extends UseCase<GetAllMovieUseCase.InputValues, GetAllMovieUseCase.OutputValues>{
+    @Value
+    class InputValues implements UseCase.InputUseCase { }
+
+    @Value
+    class OutputValues implements UseCase.OutputUseCase {
+        List<Movie> movies;
+    }
 
 }

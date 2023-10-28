@@ -22,5 +22,4 @@ public class MoviePresenter implements UseCase.OutputUseCase {
     public String getDescription(){
         return movie.getDescription();
     }
-
 }

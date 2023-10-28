@@ -1,10 +1,10 @@
-package com.vjrszcode.movies.adapters.gateways;
+package com.vjrszcode.movies.adapters.gateways.movie;
 
 import com.vjrszcode.movies.core.entities.Movie;
 import com.vjrszcode.movies.core.entities.enums.MovieStatus;
 import com.vjrszcode.movies.core.useCases.UseCase;
 
-public class MovieGateway implements UseCase.InputUseCase {
+public class MovieGateway {
 
     private final Long id;
     private final String name;
