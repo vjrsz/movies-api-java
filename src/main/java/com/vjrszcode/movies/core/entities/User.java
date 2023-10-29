@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -12,19 +13,25 @@ import java.util.Set;
 @Getter
 @Setter
 @EqualsAndHashCode
-@Table(name = "tb_users")
 @ToString
+@Table(name = "tb_users")
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String Name;
+    private String name;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    private Set<Movie> movie;
+    @OneToMany(mappedBy = "id.user")
+    private Set<UserMovie> userMovies = new HashSet<>();
 
     public User(Long id, String name) {
         this.id = id;
-        Name = name;
+        this.name = name;
+    }
+
+    public Set<Movie> getMovies(){
+        Set<Movie> movies = new HashSet<>();
+        userMovies.forEach((um) -> movies.add(um.getMovie()));
+        return movies;
     }
 }

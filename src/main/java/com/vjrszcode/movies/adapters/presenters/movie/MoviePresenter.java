@@ -24,4 +24,7 @@ public class MoviePresenter implements UseCase.OutputUseCase {
         return movie.getDescription();
     }
 
+    public Movie getMovie() {
+        return movie;
+    }
 }
