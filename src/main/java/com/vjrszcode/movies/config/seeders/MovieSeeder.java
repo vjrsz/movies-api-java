@@ -37,7 +37,6 @@ public class MovieSeeder implements CommandLineRunner {
         UserMovie um1 = new UserMovie(u1, m1);
         UserMovie um2 = new UserMovie(u1, m2);
         UserMovie um3 = new UserMovie(u2, m2);
-
         userMovieRepository.saveAll(List.of(um1, um2, um3));
     }
 }

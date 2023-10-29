@@ -2,11 +2,12 @@ package com.vjrszcode.movies.adapters.presenters.user;
 
 import com.vjrszcode.movies.core.entities.Movie;
 import com.vjrszcode.movies.core.entities.User;
-import com.vjrszcode.movies.core.entities.UserMovie;
 import com.vjrszcode.movies.core.useCases.UseCase;
+import lombok.Getter;
 
 import java.util.Set;
 
+@Getter
 public class UserPresenter implements UseCase.OutputUseCase {
 
     private final User user;
