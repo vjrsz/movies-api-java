@@ -1,17 +1,13 @@
 package com.vjrszcode.movies.infra.controlllers;
 
-import com.vjrszcode.movies.adapters.presenters.MoviePresenter;
-import com.vjrszcode.movies.adapters.presenters.MoviesPresenter;
+import com.vjrszcode.movies.adapters.presenters.movie.MoviePresenter;
+import com.vjrszcode.movies.adapters.presenters.movie.MoviesPresenter;
 import com.vjrszcode.movies.adapters.resources.MovieResource;
-import com.vjrszcode.movies.core.entities.Movie;
-import com.vjrszcode.movies.core.useCases.UseCase;
-import com.vjrszcode.movies.core.useCases.movies.GetAllMovieUseCase;
-import com.vjrszcode.movies.core.useCases.movies.GetByIdMovieUseCase;
+import com.vjrszcode.movies.core.useCases.movie.GetAllMovieUseCase;
+import com.vjrszcode.movies.core.useCases.movie.GetByIdMovieUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/movies")

@@ -1,7 +1,6 @@
-package com.vjrszcode.movies.adapters.presenters;
+package com.vjrszcode.movies.adapters.presenters.movie;
 
 import com.vjrszcode.movies.core.entities.Movie;
-import com.vjrszcode.movies.core.useCases.UseCase;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

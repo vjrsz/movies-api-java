@@ -1,6 +1,6 @@
 package com.vjrszcode.movies.application.services.movie;
 
-import com.vjrszcode.movies.core.useCases.movies.GetAllMovieUseCase;
+import com.vjrszcode.movies.core.useCases.movie.GetAllMovieUseCase;
 import com.vjrszcode.movies.adapters.repositories.MovieRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,7 @@
-package com.vjrszcode.movies.adapters.presenters;
+package com.vjrszcode.movies.adapters.presenters.movie;
 
 import com.vjrszcode.movies.core.entities.Movie;
+import com.vjrszcode.movies.core.entities.User;
 import com.vjrszcode.movies.core.useCases.UseCase;
 
 public class MoviePresenter implements UseCase.OutputUseCase {
@@ -22,4 +23,5 @@ public class MoviePresenter implements UseCase.OutputUseCase {
     public String getDescription(){
         return movie.getDescription();
     }
+
 }

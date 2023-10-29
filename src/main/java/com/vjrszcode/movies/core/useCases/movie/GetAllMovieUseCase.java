@@ -1,4 +1,4 @@
-package com.vjrszcode.movies.core.useCases.movies;
+package com.vjrszcode.movies.core.useCases.movie;
 
 import com.vjrszcode.movies.core.entities.Movie;
 import com.vjrszcode.movies.core.useCases.UseCase;
